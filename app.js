@@ -13,7 +13,13 @@ var setup = function(){
 
     // examples
     drawJulekugle(xMid - 150, yMid + 170);
-    drawDannebrog(xMid + 100, yMid - 100);
+    drawDannebrog(xMid + 100, yMid - -150);
+    drawDannebrog(xMid + -100, yMid - 20);
+var x=0
+    while(x>6) {
+drawDannebrog(xmid + x*100, x*100)
+x++;
+}
 
     // call you own functions here
     drawTemplate(260, 780);
@@ -54,6 +60,7 @@ var drawLevel = function(centerX, centerY, level) {
  * Should draw a background the tree
  */
 function drawBackground() {
+   background(37, 150, 190)
     
 };
 
@@ -77,6 +84,7 @@ var drawDannebrog = function (centerX, centerY) {
     rect(centerX - width / 2 + 3 * height / 7, centerY - height / 2, height / 7, height);
     pop();
 };
+
 
 var drawJulekugle = function(centerX, centerY) {
     push();
