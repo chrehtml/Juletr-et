@@ -15,9 +15,9 @@ var setup = function(){
     drawJulekugle(xMid - 150, yMid + 170);
     drawDannebrog(xMid + 100, yMid - -150);
     drawDannebrog(xMid + -100, yMid - 20);
-var x=0
+var x=0;
     while(x>6) {
-drawDannebrog(xmid + x*100, x*100)
+drawDannebrog(xMid + x*100, x*100)
 x++;
 }
 
